@@ -6,10 +6,6 @@ app.use(cors())
 
 app.get("/", (req, res) => {
 
-    for (let i = 0; i < 100000000; i++) {
-        console.log(i);
-    }
-
     return res.send("Hello world!")
 });
 app.get("/api/header", (req, res) => res.json("My backend sucks!"));
